@@ -8,27 +8,46 @@
     *{box-sizing:border-box;}
     html, body {  
       width: 100vw;
-      height: 90vh;
+      height: 100vh;
       font-family: 'Slabo 27px', 'Roboto Slab', Verdana, Arial, sans-serif;
       font-size: 20px;  
     }
-     @media screen and (min-width: 25em){
+    @media screen and (min-width: 25em){
       html { font-size: calc( 20px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
     }
-
     @media screen and (min-width: 1300px) {
       html {
         font-size: 22px;
       }
     }
-
+    html {
+      background: url(https://makzan.blog/wp-content/uploads/2018/04/0B12D081-06DA-4C87-9C8C-5CAACDED728D-1-1920x1515.jpeg) center center no-repeat;
+      background-size: cover;  
+    }
+    body:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(255,255,255,.95);
+      z-index: -1;
+    }
     body {
       display: flex;
       align-items: center;
       justify-content: center;
+      height: 90vh;
+    }
+    .profile {
+      padding: 1em 2em;
+    /*   background: rgba(255,255,255, 1); */
+      border-radius: 5px;
     }
     h1 {
       font-size: 2em;
+      margin: 0;
     }
     p {
       line-height: 1.8em;
@@ -84,7 +103,7 @@
 
     footer {
       text-align: center;
-      margin: 1em 0;
+      margin: 1em 0 0 0;
       color: darkgrey;
     }
   </style>
