@@ -1,9 +1,110 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    <h1>Welcome!</h1>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;}
+    html, body {  
+      width: 100vw;
+      height: 90vh;
+      font-family: 'Slabo 27px', 'Roboto Slab', Verdana, Arial, sans-serif;
+      font-size: 20px;  
+    }
+     @media screen and (min-width: 25em){
+      html { font-size: calc( 20px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+    }
 
-    <h2>{{ .Title }}</h2>
-    {{ .Content }}
+    @media screen and (min-width: 1300px) {
+      html {
+        font-size: 22px;
+      }
+    }
 
-  </body>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      line-height: 1.8em;
+    }
+
+    mark {
+      background: rgba(255,255,0,.8);
+      border-radius: 60% 10%;
+      box-shadow: 0 0 5px rgba(255,255,0,.8);
+    }
+    a {
+      color: rebeccapurple;
+    }
+    a:hover {
+      color: black;
+      background: rgba(255,255,0,.8);
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;  
+      flex-direction: column;
+    }
+    @media screen and (min-width: 500px) {
+      nav ul {
+        flex-direction: row;    
+      }
+    }
+    nav li {
+      flex: 1;  
+    }
+    nav li a {
+      margin: 0;
+      display: block;
+      padding: 1em;  
+      text-align: center;
+      background: rebeccapurple;
+      text-decoration: none;
+      color: white;
+      border-radius: 3px;
+      box-shadow: 2px 2px 0 rgba(255,255,0,.8);  
+    }
+    nav li a:first-child {
+      margin-right: 1vw;
+      margin-bottom: 3vw;
+    }
+    nav li a:hover {
+      background: rgba(255,255,0,.8);
+      color: black;
+      box-shadow: 2px 2px 0 rebeccapurple;
+    }
+
+    footer {
+      text-align: center;
+      margin: 1em 0;
+      color: darkgrey;
+    }
+  </style>
+  <title>Makzan.net</title>
+</head>
+<body>
+  <div class="profile">
+    <h1>Hello, I’m <mark>Thomas Mak</mark>.</h1>
+    <p>
+      I train <a href="https://www.worldskills.org/what/career/skills-explained/information-and-communication-technology/web-design-and-development/" title="WorldSkills: Web Design and Development">international award-wining</a> web developers.<br>
+      I <a href="https://leanpub.com/web-visual-effects-with-css3/" title="Web visual effects with CSS3">write books</a> about HTML5 and web technology.<br>
+    </p>  
+    <nav>
+      <ul>
+        <li><a href="https://makzan.blog">Blog & Journal</a></li>
+        <li><a href="https://makzan.live">Daily Feed</a></li>  
+      </ul>    
+    </nav>
+    <footer>2005—2018, Mak Seng Hin.</footer>
+  </div>
+
+</body>
 </html>
