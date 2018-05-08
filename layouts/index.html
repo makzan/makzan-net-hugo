@@ -8,9 +8,10 @@
     *{box-sizing:border-box;}
     html, body {  
       width: 100vw;
-      height: 100vh;
+      min-height: 100vh;
       font-family: 'Slabo 27px', 'Roboto Slab', Verdana, Arial, sans-serif;
-      font-size: 20px;  
+      font-size: 20px;
+      margin: 0;
     }
     @media screen and (min-width: 25em){
       html { font-size: calc( 20px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
@@ -38,7 +39,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 90vh;
+      min-height: 90vh;
     }
     .profile {
       padding: 1em 2em;
