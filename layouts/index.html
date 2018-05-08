@@ -65,6 +65,14 @@
       color: black;
       background: rgba(255,255,0,.8);
     }
+    h1 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 a:hover {
+      text-decoration: underline;
+      background: none;
+    }
     nav ul {
       list-style: none;
       margin: 0;
@@ -72,9 +80,15 @@
       display: flex;  
       flex-direction: column;
     }
+    span.hide-in-small {
+      display: none;
+    }
     @media screen and (min-width: 500px) {
       nav ul {
         flex-direction: row;    
+      }
+      span.hide-in-small {
+        display: inline;
       }
     }
     nav li {
@@ -115,10 +129,10 @@
 </head>
 <body>
   <div class="profile">
-    <h1>Hello, I’m <mark>Thomas Mak</mark>.</h1>
+    <h1>Hello, I’m <mark><a href="https://makzan.blog/about" title="About Thomas Mak">Thomas Mak</a></mark>.</h1>
     <p>
-      I train <a href="https://www.worldskills.org/what/career/skills-explained/information-and-communication-technology/web-design-and-development/" title="WorldSkills: Web Design and Development">international award-wining</a> web developers.<br>
-      I <a href="https://leanpub.com/web-visual-effects-with-css3/" title="Web visual effects with CSS3">write books</a> about HTML5 and web technology.<br>
+      I train <span class="hide-in-small">international </span>award-wining web developers.<br>
+      I <a href="https://leanpub.com/web-visual-effects-with-css3/" title="Web visual effects with CSS3">write books</a> about <span class="hide-in-small">HTML5 and </span>web technology.<br>
     </p>  
     <nav>
       <ul>
@@ -131,6 +145,8 @@
       2005—2018, Makzan.
     </footer>
   </div>
+
+
 
 
 
