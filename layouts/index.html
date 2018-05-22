@@ -101,9 +101,9 @@
       display: block;
       padding: 1em;  
       text-align: center;
-      background: rebeccapurple;
+      background: lightyellow;
       text-decoration: none;
-      color: white;
+      color: rebeccapurple;
       border-radius: 3px;
       box-shadow: 2px 2px 0 rgba(255,255,0,.8);  
     }
@@ -112,6 +112,22 @@
       margin-bottom: 3vw;
     }
     nav li a:hover {
+      background: rgba(255,255,0,.8);
+      color: black;
+      box-shadow: 2px 2px 0 rebeccapurple;
+    }
+    
+    a.cta {
+      display: block;
+      padding: 1em;  
+      text-align: center;
+      background: rebeccapurple;
+      text-decoration: none;
+      color: white;
+      border-radius: 3px;
+      box-shadow: 2px 2px 0 rgba(255,255,0,.8);  
+    }
+    a.cta:hover {
       background: rgba(255,255,0,.8);
       color: black;
       box-shadow: 2px 2px 0 rebeccapurple;
@@ -134,14 +150,17 @@
     <h1>Hello, I’m <mark><a href="https://makzan.blog/about" title="About Thomas Mak">Thomas Mak</a></mark>.</h1>
     <p>
       I train <span class="hide-in-small">international </span>award-wining web developers.<br>
-      I <a href="https://leanpub.com/web-visual-effects-with-css3/" title="Web visual effects with CSS3">write books</a> about <span class="hide-in-small">HTML5 and </span>web technology.<br>
-    </p>  
-    <nav>
+      I <a href="https://www.amazon.com/s/field-keywords=Makzan">write books</a> about <span class="hide-in-small">HTML5 and </span>web technology.<br>
+      My latest project is: 
+      <a class="cta" href="https://leanpub.com/web-visual-effects-with-css3/" title="Web visual effects with CSS3">Web Visual Effects with CSS3</a>
+    </p> 
+    <p>I <a href="https://makzan.blog">blog weekly</a> and share daily update in <a href="https://makzan.live">my feed</a>.</p>
+    <!--<nav>
       <ul>
-        <li><a href="https://makzan.blog">Blog & Journal</a></li>
+        <li>Blog & Journal</a></li>
         <li><a href="https://makzan.live">Daily Feed</a></li>  
       </ul>    
-    </nav>
+    </nav>-->
     <footer>
       <p><a href="http://eepurl.com/cIHbyr">Subscribe to my weekly newsletter</a></p>
       <img src="https://makzan.blog/wp-content/uploads/2015/11/Makzan-signature-300x126.png" alt="signature of Makzan"><br>
