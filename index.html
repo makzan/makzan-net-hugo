@@ -53,7 +53,7 @@
     p {
       line-height: 1.8em;
     }
-
+    img {max-width: 100%}
     mark {
       background: rgba(255,255,0,.8);
       border-radius: 60% 10%;
@@ -132,6 +132,7 @@
       box-shadow: 2px 2px 0 rebeccapurple;
     }
     
+    .profile-pic,
     .latest-project,
     .my-books {
       text-align: center;
@@ -152,7 +153,7 @@
 <body>
   <div class="profile">
     <h1>Hello, I’m <mark><a href="https://makzan.blog/about" title="About Thomas Mak">Thomas Mak</a></mark>.</h1>
-    <p><img src="/thomas-working-at-office.jpeg" alt="Makzan working at office"></p>
+    <p class="profile-pic"><img width=500 src="/thomas-working-at-office.jpeg" alt="Makzan working at office"></p>
     <p>
       I <a href="https://leanpub.com/u/makzan">write books</a> about <span class="hide-in-small">HTML5 and </span>web technology.<br>
       I <a href="https://codepen.io/makzan/">train</a> <span class="hide-in-small">international </span>award-wining web developers.<br>      
@@ -163,7 +164,7 @@
       <a class="cta" href="https://leanpub.com/mobile-first-web-design" title="Mobile First Web Design, 2nd Edition">Mobile First Web Design, 2nd Edition</a>
       <!--<a class="cta" href="https://css3effects.com" title="Web visual effects with CSS3">Web Visual Effects with CSS3</a>-->
     </p>
-    <p class="my-books>My Books:</p>
+    <p class="my-books">My Books:</p>
     <ul>      
       <li><a href="https://leanpub.com/web-visual-effects-with-css3">Web Visual Effects with CSS3</a>, 2018</li>
       <li><a href="https://leanpub.com/mobile-first-web-design">Mobile First Web Design, 1st Edition</a>, 2017</li>
